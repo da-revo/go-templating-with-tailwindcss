@@ -1,4 +1,4 @@
-module exapmle.com/m
+module github.com/da-revo/go-templating-with-tailwindcss
 
 go 1.19
 
