@@ -5,11 +5,11 @@
 ```bash
 npm install -D prettier prettier-plugin-tailwindcss
 
-prettier --write .  
+prettier --write .
 ```
 
 ```bash
-tailwindcss -i ./input.css -o ./data/output.css -c tailwind.config.cjs --minify --watch 
+tailwindcss -i ./input.css -o ./data/output.css -c tailwind.config.cjs --minify --watch
 
 ```
 
