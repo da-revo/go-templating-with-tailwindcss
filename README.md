@@ -9,7 +9,7 @@ prettier --write .
 ```
 
 ```bash
-tailwindcss -i ./input.css -o ./data/output.css -c tailwind.config.cjs --watch
+tailwindcss -i ./input.css -o ./data/output.css -c tailwind.config.cjs --minify --watch 
 
 ```
 
