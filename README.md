@@ -1,5 +1,7 @@
 # Go templating with tailwindcss
 
+<https://github.com/tailwindlabs/prettier-plugin-tailwindcss>
+
 ```bash
 npm install -D prettier prettier-plugin-tailwindcss
 
