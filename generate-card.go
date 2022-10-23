@@ -28,8 +28,8 @@ func generateCard(w http.ResponseWriter, r *http.Request) error {
 			{Title: "Task 3", Done: true},
 		},
 	}
+
 	tmpl.Execute(w, data)
 
-	w.Write([]byte("hello world"))
 	return nil
 }
