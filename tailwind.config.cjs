@@ -13,8 +13,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require("daisyui")],
-  // daisyUI config 
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  // daisyUI config
   daisyui: {
     styled: true,
     themes: true,

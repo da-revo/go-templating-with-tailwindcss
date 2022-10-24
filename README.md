@@ -1,6 +1,11 @@
-# Go templating with tailwindcss
+# Go templating with tailwindcss and daisyUI
 
 <https://github.com/tailwindlabs/prettier-plugin-tailwindcss>
+
+```bash
+npm install -D @tailwindcss/typography
+npm i daisyui
+```
 
 ```bash
 npm install -D prettier prettier-plugin-tailwindcss

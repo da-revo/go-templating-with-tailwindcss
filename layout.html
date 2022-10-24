@@ -1,15 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title> You have been invited to...</title>
     <link href="/files/output.css" rel="stylesheet" />
     <!-- <link href="http://localhost:3333/files/output.css" rel="stylesheet"> -->
   </head>
-  <body>
-    <h1></h1>
+
+  <body class="text-gray-600">
+    <div>
+      <!-- content wrapper -->
+      <div>
+        <nav>
+          <div>
+            <h1 class="p-4 font-bold uppercase">
+              <a href="/">Rajkumar invited you to a party! 🍾</a>
+            </h1>
+          </div>
+          <ul>
+            <li class="text-gray-700">
+              <a href="#">
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <main class="p-6 px-16 font-light">
+        <div class="flex items-center justify-end">
+          <a href="#" class="bg-cyan-600">Log in</a>
+          <a href="#" class="ml-2 bg-fuchsia-600">Install</a>
+          <a href="#" class="ml-2 bg-yellow-600">Sign up</a>
+        </div>
+
+        <header>
+          <h2 class="text-6xl font-semibold text-gray-700">Recipies</h2>
+          <h3 class="text-2xl font-semibold">For ninjas</h3>
+        </header>
+
+        <div>
+          <h4 class="mt-12 border-b border-green-200 pb-2 font-bold">Latest</h4>
+          <div class="mt-8">
+            <!-- cards go here -->
+            <div>
+              <img
+                src="https://www.kbb.com/wp-content/uploads/2021/11/Hyundai-SEVEN-concept-front-three-quarter.jpg?w=763"
+                alt="Card Image"
+              />
+              <div>
+                <span>5 bean chilli stew</span>
+                <span>Recipie by mario</span>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="mt-12 border-b border-green-200 pb-2 font-bold">
+            Popular
+          </h4>
+          <div class="mt-8">
+            <!-- cards go here -->
+          </div>
+
+          <div class="flex justify-center">
+            <div>Load more</div>
+          </div>
+        </div>
+      </main>
+    </div>
 
     <div class="card m-4 w-80 shadow-xl">
       <figure>
@@ -17,7 +87,7 @@
       </figure>
       <div class="card-body">
         <h2 class="card-title">{{.PageTitle}}</h2>
-        <p>para</p>
+        <p>Things to do:</p>
         <ul>
           {{range .Items}} {{if .Done}}
           <li class="done">{{.Title}}</li>
@@ -25,6 +95,33 @@
           <li>{{.Title}}</li>
           {{end}} {{end}}
         </ul>
+      </div>
+    </div>
+
+    <div class="right-0 bg-gray-50">
+      <div
+        class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8"
+      >
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <span class="block">Looking for adventure?</span>
+          <span class="block text-indigo-600">Download the app now!</span>
+        </h2>
+        <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+          <div class="inline-flex rounded-md shadow">
+            <a
+              href="https://app.getzigg.com"
+              class="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
+              >Get ZIGG</a
+            >
+          </div>
+          <div class="ml-3 inline-flex rounded-md shadow">
+            <a
+              href="https://getzigg.com"
+              class="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50"
+              >Learn more</a
+            >
+          </div>
+        </div>
       </div>
     </div>
   </body>

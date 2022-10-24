@@ -15,17 +15,17 @@ type item struct {
 	Done  bool
 }
 
-func generateCard(w http.ResponseWriter, r *http.Request) error {
+func generateWebpage(w http.ResponseWriter, r *http.Request) error {
 	tmpl, err := template.ParseFiles("layout.html")
 	if err != nil {
 		return err
 	}
 	data := itemPageData{
-		PageTitle: "My TODO list",
+		PageTitle: "Manipal",
 		Items: []item{
-			{Title: "Task 1", Done: false},
-			{Title: "Task 2", Done: true},
-			{Title: "Task 3", Done: true},
+			{Title: "Visit EOTT", Done: false},
+			{Title: "Swim at the lake", Done: true},
+			{Title: "Study?", Done: true},
 		},
 	}
 

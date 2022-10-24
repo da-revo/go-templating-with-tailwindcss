@@ -21,7 +21,7 @@ func (h Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	r := chi.NewRouter()
-	r.Method("GET", "/", Handler(generateCard))
+	r.Method("GET", "/", Handler(generateWebpage))
 
 	workDir, _ := os.Getwd()
 	filesDir := http.Dir(filepath.Join(workDir, "data"))
